@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sunny Dhaliwal - Resume</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="//use.typekit.net/lyj3wzr.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <body>
+        <div class="page">
+            <div class="section row">
+                <h1 class="col"><span style="font-weight:700">Sunny</span> Dhaliwal</h1>
+                <div class="contact-info col-right">
+                    <div>226 . 978 . 3891</div>
+                    <div><a href="mailto:s24dhali@uwaterloo.ca">s24dhali@uwaterloo.ca</a></div>
+                    <div><!--<a href="http://jugalm.com">jugalm.com</a>--></div>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Interests</h2>
+                <div class="section-text col-right"><span class="key">Algorithms</span> <span class="key">Machine learning</span> <span class="key">Mechatronics</span> <span class="key">Operating Systems</span> <span class="key">Big Data</span> <span class="key">Low-Level Systems</span><span class="key">Game Programming</span></div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Skills</h2>
+                <div class="section-text col-right row">
+                    <ul class="skills" style="width:25%">
+                        <li>C, C++ (OOP), C# (OOP)</li>
+                        <li>Java (OOP)</li>
+                        <li>VHDL, Assembly</li>
+                        <li>Matlab</li>
+                    </ul>
+                    <ul class="skills" style="width:35%">
+                        <li>Bash/Unix </li>
+                        <li>HTML(5), CSS(3)</li>
+                        <li>Python (OOP)</li>
+                        <li>Raspberry Pi</li>
+                        
+                    </ul>
+                    <ul class="skills">
+                        <li>VBA</li>
+                        <li>MS Office</li>
+                        <li>Windows, MAC, Linux</li>
+                        <li>Eclipse, Vim</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Education</h2>
+                <div class="section-text col-right">
+                    <h3><span class="emph">B.A.Sc</span> in Electrical and Computer Engineering</h3>
+                    <div>University of Waterloo</div>
+                    <div class="row">
+                        <div class="col light">Waterloo, Canada</div>
+                        <div class="col-right light">September 2012 - present</div>
+                    </div>
+                </div>
+                <!--<div class="section-text col-right">
+                    <h3><span class="emph">Bachelor of Engineering</span> in Computer Engineering</h3>
+                    <div>University of Pune</div>
+                    <div class="row">
+                        <div class="col light">Pune, India</div>
+                        <div class="col-right light	">September 2008 - July 2012	</div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="section row">
+                <h2 class="col">Experience</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Cheriton School of Computer Science</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Head T.A., Course Coordinator</div>
+                        <div class="col-right light">January 2015 - April 2015</div>
+                    </div>
+                    <div>Managed and taught CS138 - Implementation of Data Structures to first year Software Engineers.<i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Implemented all test cases for every assignment question</li>
+                        <li>Taught data strucutes to 150 students twice a week</li>
+                        <li>Held consulting hours for course work and generic programming questions</li>
+                        <li>Managed course server through bash</li>
+                </div>
+
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>ADNOC, The Petroleum Institute (U.A.E., Abu Dhabi)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Research Assistant, Data Particle Analyzer</div>
+                        <div class="col-right light">May 2014 - August 2014</div>
+                    </div>
+                    <ul class="desc">
+                        <li>Improved matlab code for imaging graphene oxide particles</li>
+                        <li>Statistically analysed particle distributions</li>
+                        <li>Improved mathematical rheological models by including particle deviation terms</li>
+                        <li>Developed mathematical relationship for newly implemented dilution scheme</li>
+                </div>
+
+                              <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>SooChow University (China, Suzhou)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Research Assistant, Solar Cell Researcher</div>
+                        <div class="col-right light">September 2013 - December 2013</div>
+                    </div>
+                    <ul class="desc">
+                        <li>Front-end development on nano-optoelectronics website</li>
+                        <li>Editor of technical research papers</li>
+                        <li>Weekly presentation on progress to professors and graduate students</li>
+                        <li>Theorized, fabricated, and tested solar cell devices</li>
+
+                </div>
+
+                              <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>S&C Electric</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Assistant Mechanical Engineer</div>
+                        <div class="col-right light">January 2013 - April 2013</div>
+                    </div>
+                    <ul class="desc">
+                        <li>Implemented project scheduling macro</li>
+                        <li>Setup office hardware to project task schedule</li>
+                        <li>Consulted with technicans and welders about faulty part design</li>
+                        <li>Designed enclosures and parts with AutoCAD and Solid Edge</li>
+                </div>
+                
+
+<!--                 <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Cityevents.com</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Web/Mobile Front-End Developer</div>
+                        <div class="col-right light">February 2013 - August 2013</div>
+                    </div>
+                    <div class="desc">Converted designs into responsive HTML/CSS code for the Web, Mobile and Tablet platforms. Re-imagined and developed better asynchronous user interface components with Javascript.</div>
+                </div> -->
+
+            </div>
+            <div class="section row">
+                <h2 class="col">Projects</h2>
+                <div class="section-text col-right">
+                    <h3><a href="https://github.com/dwalsunny">github.com/dwalsunny</a></h3>
+                </div>
+            </div>
+            
+            <div class="section row">
+                <h2 class="col">Honors</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>SEARCC International School's Software Competition</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Algorithmic Programming Competition</div>
+                        <div class="col-right light">Fall 2007</div>
+                    </div>
+                    <div class="desc">Organized by the Computer Society of India, was part of a team of three to represent our region at
+                        the national level finals. Finished <span class="emph">second</span> by solving the maximum number of problems.
+                    </div>
+                </div>
+                			
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Codechef Gamer's Challenge</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Act</div>
+                        <div class="col-right light">Summer 2009</div>
+                    </div>
+                    <div class="desc">Developed a prototypical game using Actionscript on the Flash platform, in less than 48 hours. Received an honorable mention award for the <span class="emph">Best Looking Game</span>.</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -204,7 +204,7 @@
                 <h2 class="col">Skills</h2>
                 <div class="section-text col-right row">
                     <ul class="skills" style="width:33%">
-                        <li>C, C++ (OOP), C# (OOP)</li>
+                        <li>C (mutli-threading), C++ (OOP), C# (OOP)</li>
                         <li>Java (OOP)</li>
                         <li>VHDL, Assembly</li>
                         <li>Matlab</li>
@@ -239,7 +239,7 @@
                     <div>University of Pune</div>
                     <div class="row">
                         <div class="col light">Pune, India</div>
-                        <div class="col-right light	">September 2008 - July 2012	</div>
+                        <div class="col-right light ">September 2008 - July 2012    </div>
                     </div>
                 </div>-->
             </div>

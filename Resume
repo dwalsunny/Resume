@@ -201,18 +201,43 @@
                 <div class="section-text col-right"><span class="key">Algorithms</span> <span class="key">Machine learning</span> <span class="key">Mechatronics</span> <span class="key">Operating Systems</span> <span class="key">Big Data</span> <span class="key">Low-Level Systems</span><span class="key">Game Programming</span></div>
             </div>
             <div class="section row">
+                <h2 class="col">Summary of Qualifications</h2>
+                <div class="section-text col-right row">
+                    <ul class="skills" style="width:33%">
+                        <li>Strong Algorithms and Data Struture design and implementation</li>
+                        <li>Experienced in Object Oriented Design Patterns</li>
+                        <li>Experienced in Android Development</li>
+                        <li>Comfortable using version control (SVN &amp GIT)</li>
+                    </ul>
+                    <ul class="skills" style="width:27%">
+                        <li>Multi-Threading and Multi-Processing </li>
+                        <li>Operating Systems (Concurrency, Memory, I/O)</li>
+                        <li>Experienced in Embedded Systems Programming</li>
+                        <li>Application Development on Linux, MAC, Windows</li>
+                        
+                    </ul>
+                    <ul class="skills">
+                        <li>Highly motivated, flexible, and multi-task oriented</li>
+                        <li>Ability to learn new concepts/languages/theories quickly</li>
+                        <li>Excellent presentational skills</li>
+                        <li>Excellent orgranizatinal and teamwork skills</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section row">
                 <h2 class="col">Skills</h2>
                 <div class="section-text col-right row">
                     <ul class="skills" style="width:33%">
-                        <li>C (mutli-threading), C++ (OOP), C# (OOP)</li>
-                        <li>Java (OOP)</li>
+                        <li>C, C++, C#</li>
+                        <li>Java</li>
                         <li>VHDL, Assembly</li>
                         <li>Matlab</li>
                     </ul>
                     <ul class="skills" style="width:27%">
                         <li>Bash/Unix </li>
                         <li>HTML(5), CSS(3)</li>
-                        <li>Python (OOP)</li>
+                        <li>Python</li>
                         <li>Raspberry Pi</li>
                         
                     </ul>
@@ -220,7 +245,7 @@
                         <li>VBA</li>
                         <li>MS Office</li>
                         <li>Windows, MAC, Linux</li>
-                        <li>Eclipse, Vim</li>
+                        <li>Eclipse, Vim, Xcode, Visual Studio, Qt</li>
                     </ul>
                 </div>
             </div>
@@ -233,6 +258,23 @@
                         <div class="col light">Waterloo, Canada</div>
                         <div class="col-right light">September 2012 - present</div>
                     </div>
+                                <div class="section row">
+                <h2 class="col">Related Courses</h2>
+                <div class="section-text col-right row">
+                    <ul class="skills" style="width:33%">
+                        <li>Algorithms and Data Structures</li>
+                        <li>Programming in C#</li>
+                        <li>Digital Computers</li>
+                        <li>Probability Theory and Random Processes</li>
+                    </ul>
+                    <ul class="skills" style="width:27%">
+                        <li>Operating Systems and System Programming </li>
+                        <li>Embedded Systems</li>
+                        <li>Digital Circuits and Systems</li>
+                        <li>Discrete Mathematics</li> 
+                    </ul>
+                </div>
+            </div>
                 </div>
                 <!--<div class="section-text col-right">
                     <h3><span class="emph">Bachelor of Engineering</span> in Computer Engineering</h3>

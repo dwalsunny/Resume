@@ -299,9 +299,9 @@
                     </div>
                     <div>Managed and taught CS138 - Implementation of Data Structures to first year Software Engineers.<i></i>
                     </div>
-                    <ul class="desc">
-                        <li>Implemented all test cases for every assignment question (C++, Unix Scripting)</li>
-                        <li>Taught data strucutes to 150 students twice a week</li>
+                    <ul class="desc"> 
+                        <li>Implemented test cases in order to automate marking process (C++, Unix Scripting)</li>
+                        <li>Exceptionally improved public speaking by teaching 2x week to 150 students</li>
                         <li>Held consulting hours for course work and generic programming questions</li>
                         <li>Managed course server through bash (Unix Scripting)</li>
                 </div>

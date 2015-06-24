@@ -261,13 +261,13 @@
                                 <div class="section row">
                 <h2 class="col">Related Courses</h2>
                 <div class="section-text col-right row">
-                    <ul class="skills" style="width:33%">
+                    <ul class="skills" style="width:40%">
                         <li>Algorithms and Data Structures</li>
                         <li>Programming in C#</li>
                         <li>Digital Computers</li>
                         <li>Probability Theory and Random Processes</li>
                     </ul>
-                    <ul class="skills" style="width:27%">
+                    <ul class="skills" style="width:40%">
                         <li>Operating Systems and System Programming </li>
                         <li>Embedded Systems</li>
                         <li>Digital Circuits and Systems</li>
@@ -286,7 +286,7 @@
                 </div>-->
             </div>
             <div class="section row">
-                <h2 class="col">Experience</h2>
+                <h2 class="col">Employment History</h2>
                 <div class="section-text col-right">
                     <div class="row">
                         <div class="col">
@@ -300,10 +300,10 @@
                     <div>Managed and taught CS138 - Implementation of Data Structures to first year Software Engineers.<i></i>
                     </div>
                     <ul class="desc">
-                        <li>Implemented all test cases for every assignment question</li>
+                        <li>Implemented all test cases for every assignment question (C++, Unix Scripting)</li>
                         <li>Taught data strucutes to 150 students twice a week</li>
                         <li>Held consulting hours for course work and generic programming questions</li>
-                        <li>Managed course server through bash</li>
+                        <li>Managed course server through bash (Unix Scripting)</li>
                 </div>
 
                 <div class="section-text col-right">
@@ -317,7 +317,7 @@
                         <div class="col-right light">May 2014 - August 2014</div>
                     </div>
                     <ul class="desc">
-                        <li>Improved matlab code for imaging graphene oxide particles</li>
+                        <li>Improved matlab code for imaging graphene oxide particles (Matlab)</li>
                         <li>Statistically analysed particle distributions</li>
                         <li>Improved mathematical rheological models by including particle deviation terms</li>
                         <li>Developed mathematical relationship for newly implemented dilution scheme</li>
@@ -334,7 +334,7 @@
                         <div class="col-right light">September 2013 - December 2013</div>
                     </div>
                     <ul class="desc">
-                        <li>Front-end development on nano-optoelectronics website</li>
+                        <li>Front-end development on nano-optoelectronics website (HTML, CSS, Javascript)</li>
                         <li>Editor of technical research papers</li>
                         <li>Weekly presentation on progress to professors and graduate students</li>
                         <li>Theorized, fabricated, and tested solar cell devices</li>
@@ -352,7 +352,7 @@
                         <div class="col-right light">January 2013 - April 2013</div>
                     </div>
                     <ul class="desc">
-                        <li>Implemented project scheduling macro</li>
+                        <li>Implemented project scheduling macro (VBA)</li>
                         <li>Setup office hardware to project task schedule</li>
                         <li>Consulted with technicans and welders about faulty part design</li>
                         <li>Designed enclosures and parts with AutoCAD and Solid Edge</li>

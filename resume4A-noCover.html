@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            body { margin: 0;
+                   padding: 0;
+                   background-color: #fff font-size: 12px;
+                   font-family: "source-sans-pro", sans-serif;
+                   -webkit-font-smoothing: subpixel-antialiased;
+            }
+            * { box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+
+            /*
+             Primary Rules
+            */
+
+            p {
+                padding-top: 25px;
+                padding-right: 50px;
+                padding-bottom: 25px;
+                padding-left: 50px;
+                margin: 0;
+                font-family: "Times New Roman"
+            }
+      
+            h1 { font-weight: 300;
+                  font-style:italic;
+                 margin: 5px 0 0;
+                 font-size: 40px;
+                 color:#ba0018;
+                 padding: 0 10px 10px;
+                 border-radius:2px;
+                 font-family: 'merriweather', sans-serif;
+            }
+            h2 { color: #ba0018;
+                 width: 150px;
+                 font-size: 18px;
+                 padding-left: 20px;
+                 font-weight:400;
+                 font-family: 'merriweather', sans-serif;
+            }
+            h2:first-letter { font-size: 150%; }
+            h3 { font-size: 18px;
+                 font-weight: bold;
+                 margin-bottom: 0;
+                 line-height: 28px;
+                 font-family: 'merriweather', sans-serif;
+            }
+            h2, h3 { margin-top: 5px }
+            a { color: #ba0018;
+                display: inline-block;
+                text-decoration: none;
+                padding:2px 4px;
+                border-radius:2px;
+                margin-right:-2px;
+            }
+            a:hover {
+              background-color:#ba0018;
+              color:#fff;
+            }
+            .key:first-child { margin-left: 0 }
+            .key { margin: 0 10px;
+                   position: relative;
+            }
+            .key::before { content: '◆';
+                           position: absolute;
+                           left: -15px;
+                           color: #555;
+                           font-size: 7pt;
+            }
+            .key:first-child::before { content: '' }
+            .section { border-bottom: 1px solid #ddd;
+                       padding: 10px 0 15px;
+            }
+              .section2 { padding: 10px 0 15px;
+            }
+            .section:last-child { border: none }
+            .section-text { width: 80%;
+                            font-size: 18px;
+                            line-height: 24px;
+                            margin: 10px 0 10px;
+                            padding: 0 10px;
+            }
+            .subsection { margin: 10px 0 5px }
+            .desc { font-size: 16px; font-family: "source-sans-pro", sans-serif; color:#444;}
+            .contact-info { font-size: 16px;
+                            text-align: right;
+            }
+            .emph { font-style: italic }
+            .light { color: #aaa;letter-spacing:1px;
+                     font-size: 14px;
+                     line-height:28px;
+                     font-family: "source-sans-pro", sans-serif;
+                     text-transform:uppercase;
+            }
+            ul{
+              padding-left:15px;
+            }
+
+            ul.skills{
+              float:left;
+              width:30%;
+              padding-left:0px;
+              margin: 0 20px 0 0;
+            }
+
+            ul.skills li{
+              list-style-type: none;
+              font-size:16px;
+              margin-bottom:10px;
+            }
+
+            ul.skills li:last-child{
+              margin:0;
+            }
+
+            /*
+             Float Rules
+            */
+            .row:before, .row:after { content: "";
+                                      display: table;
+            }
+            .row:after { clear: both }
+            .col { float: left }
+            .col-right { float: right }
+
+            /*
+             Page Rules
+            */
+            .page { width: 1000px;
+                    min-height: 29.7cm;
+                    margin: 1cm auto;
+
+                    background: white;
+                    padding: 20px 50px;
+            }
+            .subpage { padding: 1cm;
+                       border: 1px red solid;
+                       height: 297mm;
+            }
+
+            @page { size: A4;
+                    margin: 0;
+            }
+
+            @media print {
+                .page { margin: 0;
+                        border: initial;
+                        border-radius: initial;
+                        width: initial;
+                        min-height: initial;
+                        box-shadow: initial;
+                        background: initial;
+                        page-break-after: always;
+                }
+                .page-break{
+                  page-break-before: always;
+                  padding-top:30px;
+                }
+
+                body { font-size: 12pt;}
+                h1{
+                  font-size: 23pt;
+                }
+
+                h2{
+                  font-size:10pt;
+                  width: 3cm;
+                  padding-left: 10px;
+                }
+
+                h3 { font-size: 10pt; line-height:11pt}
+
+                .section-text { font-size: 9pt; line-height: 14pt; }
+
+                .light { font-size: 7.5pt; line-height:12pt; color:#ddd; }
+                
+                .page { width: 21cm }
+                ul {margin:5px 0 0}
+                .section { padding: 5px 0 8px }
+                .section-text { width: 15cm; margin: 5px 0 5px;}
+                .subsection { margin: 5px 0 0 }
+                .desc { font-size: 9pt }
+                
+                .contact-info { font-size: 9pt}
+                
+                ul.skills{margin: 0 10px 0 0;}
+                ul.skills li{ font-size: 9pt; margin-bottom:0}
+
+            }
+
+</style>
+        <meta charset="UTF-8">
+        <title>Sunny Dhaliwal - Resume</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="//use.typekit.net/lyj3wzr.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <body>
+        <!--
+        <div>
+        <br>
+        <br>
+        <p style="font-size: 110%">Dear Recruiter,</p>
+
+            <p style="font-size: 95%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am currently in my final year of a five-year Electrical and Computer Engineering program and I am available for a four month coop in September 2016.
+
+            During my last coop, I was a team member of the software development team at IGNIS Innovation. The main contribution I made was starting the development of the MaxLife Simulator project.  The list of requirements for the project was to create an application that will simulate the measurement and the calibration done by the analog hardware system, simulate the FPGA memory banks, and UDP network.  This consisted of architecting the software in a modular approach to add flexibility for growth.  The different type of modules for the architecture included, a UDP network, the backend physics engines that model the hardware system, handlers which communicate with the physics engines, and a facade class that acts as an interface for the handlers and dispatches them the correct packets for analysis.
+            </p>
+            <p>
+
+            In January 2015, I worked as the Head Teaching Assistant at the Chariton School of Computer Science.  I was responsible for teaching 1st year Software Engineers the fundamental principles of data structure design and implementation.  Further responsibilities include managing the course server through Bash with Unix scripting, programming test cases in C++ for student submissions, and organizing consulting hours, assignments, and exams.  
+
+            </p>
+
+            <p style="font-size: 95%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other than my work term experiences, I love to work on side projects.  I have development experience on Linux, Mac, Windows, and Android.  I have the most fun playing around with my Raspberry PI from a low-level embedded system view to a high level Linux application development environment.  Some development on the Pi includes a project dealing with the synchronization of LEDs to frequency inputs (music) and game programming.  I have also developed a few applications for the android platform using Java, Android SDK, and libGDX.</p>
+
+            <p style="font-size: 95%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am also equipped with an arsenal to understand computer architecture, assembly level language, operating systems, microcontrollers, low-level design, digital hardware design, and analog hardware design.  If not obvious already, I love knowing the full stack.  I have the ability to learn and apply quickly with a tenacious work ethic.  In addition to my hard skills, I have a great deal of experience in working with groups of people on various projects and have excellent project management skills. Not to mention my strong analytical and problem solving skills that allow me to think outside the box and come up with creative and innovative ideas that are ideal for a fast-paced strategic company. With this in mind, I believe I would be an asset to your company and would bring my superb detail oriented, organizational, and communication skills to the workplace.</p>
+
+            <p style="font-size: 95%">Thank for your consideration and I hope to have the opportunity to discuss the opening with you.</P>
+
+            <p style="font-size: 95%">Yours sincerely,</p>
+
+            <p style="font-size: 95%">Sunny Dhaliwal</p>
+
+        </p>    
+    </div>
+    -->
+  
+        <div class="page">
+            <div class="section row">
+                <br>
+                <br>
+                <div><h1 class="col"><span style="font-weight:700">Sunny</span> Dhaliwal</h1></div>
+                <div class="contact-info col-right">
+                    <div>226 . 978 . 3891</div>
+                    <div><a href="mailto:s24dhali@uwaterloo.ca">s24dhali@uwaterloo.ca</a></div>
+                </div>
+            </div>
+
+            
+        
+            <div class="section row">
+                <h2 class="col">Interests</h2>
+                <div class="section-text col-right"><span class="key">Graph Optimization Algorithms</span> <span class="key">Graph Databases</span> <span class="key">Machine Learning</span><span class="key">Operating Systems</span> <span class="key">Software Architecture</span> <!--<span class="key"></span> --><span class="key">Computer Security</span><span class="key">Game Programming</span></div>
+            </div>
+        
+
+
+            <div class="section row">
+                <h2 class="col">Skills</h2>
+                <div class="section-text col-right row">
+                    <ul class="skills" style="width:33%">
+                        <li style="line-height: 200%;">C++ (STL), C#</li>
+                        <li style="line-height: 200%;">Java (Android SDK, libGDX)</li>
+                        <li style="line-height: 200%;">C, Assembly, Matlab</li>
+                        <li style="line-height: 200%;">TCP/IP, UDP, Wireshark</li>
+                    </ul>
+                    <ul class="skills" style="width:27%">
+                        <li style="line-height: 200%;">Bash/Unix, JSON, XML</li>
+                        <li style="line-height: 200%;">HTML(5), CSS(3)</li>
+                        <li style="line-height: 200%;">Python (pygame, MLlib)</li>
+                        <li style="line-height: 200%;">Raspberry Pi</li>
+                        
+                    </ul>
+                    <ul class="skills">
+                        <li style="line-height: 200%;">Hadoop/MapReduce, MySQL</li>
+                        <li style="line-height: 200%;">SQL, Hive, Pig, Splunk</li>
+                        <li style="line-height: 200%;">Spark (MLlib), Knime</li>
+                        <li style="line-height: 200%;">Visual Studio, Vim, Eclipse, Xcode, Qt</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section row">
+                <h2 class="col">Employment History</h2>
+
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>IGNIS Innovation (Waterloo, Ontario)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Software Engineer</div>
+                        <div class="col-right light">September 2015 - December 2015</div>
+                    </div>
+                    <div>Architected and implemented a generic hardware simulation engine for IGNIS's digital and analog hardware system with a plug-and-play software architecture in C++.<i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Architected the simulator using an overall builder pattern with mediator, facade, adapter, and singleton patterns</li>
+                        <li>Implemented a register memory map with a BST data structure capable of 16, 32, and 64 bit reads</li>
+                        <li>Implemented an UDP network module</li>
+                        <li>Implmented ADC, DAC, and pixel circuit simulation algorithms</li>
+                        <li>Implemented simulator configuration settings (XML, C++)</li>
+                        <li>Implemented unit test for all objects invoked in the simulator</li>
+                </div>
+
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Cheriton School of Computer Science (Waterloo, Ontario)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Head T.A., Course Coordinator</div>
+                        <div class="col-right light">January 2015 - April 2015</div>
+                    </div>
+                    <div>Managed and taught CS138 - Implementation of Data Structures to first year Software Engineers.<i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Implemented testing infastructure in order to automate the marking process (C++, Unix Scripting)</li>
+                        <li>Exceptionally improved public speaking by teaching 2x week to 150 students</li>
+                        <li>Improved oral and written technical communication by leading group consulting hours and online group dissucssions </li>
+                        <li>Managed course server through bash (Unix Scripting)</li>
+                </div>
+
+            </div>
+
+            <div class="section row">
+                <h2 class="col">Projects</h2>
+
+                <div class="section-text col-right">
+                    <h3><a href="https://github.com/dwalsunny">github.com/dwalsunny</a></h3>
+                </div>
+
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Fourth Year Design Project (Team of 4)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Mink Box</div>
+                        <div class="col-right light">May 2015 - Present</div>
+                    </div>
+                    
+                    <div>The goal of the project is to design a phone case that is ahead of its time, and a pioneer in phone case fashion trends. Mink Box is a smart phone case that allows you to customize the design of your phone case on the fly, with any photo on your phone. The project incorporates an E Ink panel on the back of a specially designed phone case, and interfaces with the phone via an embedded microprocessor. 
+                    <i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Experience leading and solving technical issues</li>
+                        <li>Designing software and hardware interfacing modules</li>
+                        <li>Embedded interfacing of E Ink panel, microcontroler, and microusb port</li>
+                        <li>Architecture of software application layer</li>
+                        <li>Managed softare application through GIT</li>
+                </div>
+
+                <div class="section-text col-right">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <h3>Android Application Development (Java, Android SDK)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Pathfinder, Pedometer, and Displacement tracker with GUI</div>
+                        <div class="col-right light">May 2013 - August 2013 </div>
+                    </div>
+
+                    <div>The Android application architecture starts from the embedded layer, where accleometer, linear accleration, and gyroscope data is initally collected.  The data is used to render new values and postions of the TextView and MapView objects. Next the PathFinder object is invoked and passed the updated coordiantes of the user point from the MapView object.  The PathFinder then uses the A* pathfinding algorithm to calculate the shortest path between the current user node and the final destination.  The new route is displayed and the process repeats as new sensor data is available.<i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Strong Object-Oriented Design</li>
+                        <li>Implementation of A* pathfinding algorithm</li>
+                        <li>Programmed embedded celluar sensors (accelerometer, gyroscope, proximity)</li>
+                        <li>Experience using Eclipse, SVN, and Android SDK</li>
+                </div>
+              
+                <!---<div class="section-text col-right">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <h3>Android Application Development (Java, libGDX)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Flappy Bird</div>
+                        <div class="col-right light">September 2015 - December 2015</div>
+                    </div>
+                    
+                    <div>The libGDX framework was used to create the main Game object which manages screens using a GameStateManager object implemented as a stack. The current implementation of the State object on the stack runs in an update and render loop with sprite object plugins. <i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Architected with separate state and sprite plugin modules with a Game class main object interface</li>
+                        <li>Java implementation with OOP</li>
+                        <li>Experience using Android Studio and libGDX framework</li>
+                </div>-->
+
+                 <!--<div class="section-text col-right">
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <h3>Android Application Development (Java, libGDX)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Super Mario Bros</div>
+                        <div class="col-right light">March 2016 - Present</div>
+                        
+                    </div>
+                    
+                    <div>The libGDX framework was used to create the main Game object which manages screens by delegating to a Screen object.  The game is still under development. <i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Experience architecting larger projects</li>
+                        <li>Java implementation with OOP</li>
+                        <li>Experience using Android Studio and libGDX framework</li>
+                </div>-->
+
+
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Android Application Development (Java, Android SDK)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Blackout </div>
+                        <div class="col-right light">May 2015 - Present</div>
+                    </div>
+                    
+                    <div>The application pools together all the information from the various social media apps you use, the pictures you click, and the texts you send out during your night out, and conveniently presents it to you in one place. 
+                    <i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Architected the application using Factory, Adapter, and Facade design patterns</li>
+                        <li>Familarity with Android SDK architecture</li>
+                        <li>Experience with Facebook, Twitter, and SMS APIs </li>
+                        <li>Managed application workflow using GIT</li>
+                </div>
+
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Altera FPGA Hardware Interfacing (C)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">MP3 Player</div>
+                        <div class="col-right light">January 2016 - April 2016</div>
+                    </div>
+                    
+                    <div>Design and Implementation of an audio player by reading a cluster chain from a SD Card interface and writing to a memory mapped I/O speaker interface with button and switch control with C code.<i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Embedded C programming</li>
+                </div>
+
+                <!--<div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Linux Application Development (Python)</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Snake </div>
+                        <div class="col-right light">January 2015 - April 2015</div>
+                    </div>
+                    
+                    <div>Implementation of the classic game Snake using pygame library.<i></i>
+                    </div>
+                    <ul class="desc">
+                        <li>Experience with Python data structures and OOP design and implementation</li>
+                        <li>Familarity with pygame library</li>
+                        <li>Experience using Vim and the Python compiler</li>
+                </div>-->
+
+            </div>
+
+            <div class="section row">
+                <h2 class="col">Summary of Qualifications</h2>
+                <div class="section-text col-right row">
+                    <ul class="skills" style="width:33%">
+                        <li>Experienced in Object Oriented Design Patterns</li>
+                        <br>
+                        <li>Machine Learning (SVM, Decision Tree, K-nearest neightbours, logisitic regression)</li>
+                        <br>
+                        <li>Graph Optimization Algorithms (Tabu, Simulated Annealing, Genetic Algorithms)
+                        </li>
+                        <br>
+                        <li>Experienced in Android architecture and development</li>
+                    </ul>
+                    <ul class="skills" style="width:27%">
+                        <li> Comfortable using version control (SVN &amp GIT)</li>
+                        <br>
+                        <li>Operating Systems (Multi-Threading, Concurrency, Virtual Memory, I/O)</li>
+                        <br>
+                        <li>RDBMS (ER diagrams, Normalizaion, Concurrency, RA, Raid)</li>
+                        <br>
+                        <li>Experienced in Embedded Systems Programming
+                        </li>
+
+                    </ul>
+                    <ul class="skills">
+                        <li>Apache Big Data Architecture Stack</li>
+                        <br>
+                        <li>Strong Algorithms and Data Struture design and implementation
+                        </li>
+                        <br>
+                        <li>Application Development on Linux Ubuntu, MAC OSX 10.9+, Windows 7</li>
+                        <br>
+                        <li>Network programming and debugging</li>
+
+                    </ul>
+                </div>
+            </div>
+
+           
+
+
+            <div class="section row">
+                <h2 class="col">Education</h2>
+            <div class="section-text col-right">
+                <h3><span class="emph">B.A.Sc</span> in Electrical and Computer Engineering</h3>
+                <div>University of Waterloo</div>
+                <div class="row">
+                    <div class="col light">Waterloo, Canada</div>
+                    <div class="col-right light">September 2012 - present</div>
+                </div>
+                <!--
+                <h3><div>Related Courses:</div></h3>
+                
+                
+                <div>
+                    <ul class="skills" style="width:40%">
+                        <li>Algorithms and Data Structures</li>
+                        <br>
+                        <li>Database Systems</li>
+                        <br>
+                        <li>Software Design and Architectures</li>
+                        <br>
+                        <li>Cooperative and Adaptive Algorithms</li>
+                        <br>
+                        <li>Programming in C#</li>
+                    </ul>
+                    <ul class="skills" style="width:40%">
+                        <li>Digital Computers</li> 
+                        <br>
+                        <li>Computer Secruity</li>
+                        <br>
+                        <li>Embedded Systems</li>
+                        <br>
+                        <li>Embedded Microprocessor Systems</li>
+                        <br>
+                        <li>Operating Systems and System Programming </li>
+                    </ul>
+                </div>
+            -->
+            </div>
+
+            <div class="section-text col-right">
+                <h3>Big Data Specialization</h3>
+                <div>University of California, San Diego</div>
+                <div class="row">
+                    <div class="col light">San Diego, United States of America</div>
+                    <div class="col-right light">December 2015 - present</div>
+                </div>
+                <h3><div>Related Courses:</div></h3> 
+                <div>
+                    <ul class="skills" style="width:40%">
+                        <li>Machine Learning with Big Data</li>
+                        <br>
+                        <li>Big Data Framework and Applications</li>
+                        <br>
+                        <li>Graph Analytics for Big Data</li>
+                    </ul>
+                    <ul class="skills" style="width:40%">
+                        <li>Introduction to Big Data</li>
+                        <br>
+                        <li>Introduction to Big Data Analytics</li>
+                        <br>
+                        <li>Big Data - Capstone Project
+                    </ul>
+                </div>
+            </div>
+            </div>
+   
+        </div>
+    </body>
+</html>
